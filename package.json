@@ -1,0 +1,24 @@
+{
+  "name": "jay-inheritance",
+  "version": "0.0.1",
+  "description": "A super fast prototypal inheritance microlib",
+  "main": "lib/extend.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/parasyte/jay-inheritance"
+  },
+  "author": "Jay Oster <jay@kodewerx.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/parasyte/jay-inheritance/issues"
+  },
+  "homepage": "https://github.com/parasyte/jay-inheritance",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jasmine": "^0.6.4",
+    "grunt-contrib-jshint": "^0.10.0"
+  }
+}
