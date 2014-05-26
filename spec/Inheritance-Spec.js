@@ -24,7 +24,7 @@ describe("Jay Inheritance", function () {
         });
 
         var Pirate = Person.extend(Ninja, {
-            "init" : function() {
+            "init" : function () {
                 // Call the super constructor, passing a single argument
                 this._super(Person, "init", [ true ]);
             }
