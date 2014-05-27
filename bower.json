@@ -1,0 +1,21 @@
+{
+  "name" : "jay-inheritance",
+  "version" : "0.0.1",
+  "description" : "A super fast prototypal inheritance microlib",
+  "main" : "lib/extend.js",
+  "homepage" : "https://github.com/parasyte/jay-inheritance",
+  "authors" : [
+    "Jay Oster <jay@kodewerx.org>"
+  ],
+  "keywords" : [
+    "fast",
+    "prototypal",
+    "inheritance"
+  ],
+  "license" : "MIT",
+  "ignore" : [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
