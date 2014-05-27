@@ -21,7 +21,7 @@ module.exports = function (grunt) {
             },
 
             "files" : {
-                "src" : sourceFiles.concat(specFiles).concat(helperFiles)
+                "src" : [ sourceFiles, specFiles, helperFiles, "Gruntfile.js" ]
             }
         }
     });
