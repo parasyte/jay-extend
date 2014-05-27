@@ -155,7 +155,7 @@ Here's a sample `grunt-replace` configuration that takes care of this for you:
   "patterns" : [
     {
       "match" : /this\._super\(\s*([\w\.]+)\s*,\s*"(\w+)"\s*(,\s*)?/g,
-      "replacement" : '$1.prototype.$2.apply(this$3'
+      "replacement" : "$1.prototype.$2.apply(this$3"
     }
   ]
 }
