@@ -1,6 +1,6 @@
 {
   "name" : "jay-inheritance",
-  "version" : "0.0.1",
+  "version" : "0.0.2",
   "description" : "A super fast prototypal inheritance microlib",
   "main" : "lib/extend.js",
   "scripts" : {
