@@ -1,9 +1,8 @@
 {
-  "name" : "jay-inheritance",
-  "version" : "0.0.1",
+  "name" : "jay-extend",
   "description" : "A super fast prototypal inheritance microlib",
-  "main" : "lib/extend.js",
-  "homepage" : "https://github.com/parasyte/jay-inheritance",
+  "main" : "lib/jay-extend.js",
+  "homepage" : "https://github.com/parasyte/jay-extend",
   "authors" : [
     "Jay Oster <jay@kodewerx.org>"
   ],

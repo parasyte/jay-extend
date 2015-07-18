@@ -1,4 +1,4 @@
-# Jay Inheritance
+# Jay Extend
 
 A super fast prototypal inheritance microlib for the modern web.
 
@@ -28,21 +28,21 @@ I wrote an in-depth article that is available on my
 ### Setup in nodeland
 
 ```javascript
-// Add Object.extend() method
-require("jay-inheritance");
+// Require Jay.extend() method
+var Jay = require("jay-extend");
 ```
 
 ### Setup in browserland
 
 ```html
-<!-- Add Object.extend() method -->
-<script src="jay-inheritance/lib/extend.js"></script>
+<!-- Add Jay.extend() method -->
+<script src="jay-extend/lib/jay-extend.js"></script>
 ```
 
 ### Example class definitions
 
 ```javascript
-var Person = Object.extend({
+var Person = Jay.extend({
     "init" : function (isDancing) {
         this.dancing = isDancing;
     },
@@ -96,7 +96,7 @@ console.log(
 ); // => true
 ```
 
-## Object.prototype.extend
+## Jay.extend
 
 Returns **Class**
 
@@ -166,7 +166,7 @@ Here's a sample `grunt-replace` configuration that takes care of this for you:
 The source code is hereby released under the MIT License. The full text of the
 license appears below.
 
-Copyright (c) 2014 Jay Oster
+Copyright (c) 2014-2015 Jay Oster
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
