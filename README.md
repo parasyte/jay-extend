@@ -27,12 +27,16 @@ I wrote an in-depth article that is available on my
 
 ### Setup in nodeland
 
+Install: `$ npm install jay-extend`
+
 ```javascript
 // Require Jay.extend() method
 var Jay = require("jay-extend");
 ```
 
 ### Setup in browserland
+
+Install: `$ bower install jay-extend`
 
 ```html
 <!-- Add Jay.extend() method -->
@@ -110,6 +114,28 @@ methods, access its prototype or use `this._super()` (See below).
 
 **Descriptor** is a simple (single-level) `Object` or **Class**. Each key in the
 **Descriptor** must have a `Function` value.
+
+The extend method may be bound to any constructor using the standard `Function.prototype.bind()` method. This is useful for extending builtin classes like `Error` and `Array`. An example from the test suite:
+
+```javascript
+// Class definitions (extends Error)
+var E = Jay.extend.bind(Error)({
+    "init" : function (message) {
+        this.name = "E";
+        this.message = message;
+    }
+});
+
+var MyE = E.extend({});
+
+// Class instantiation
+try {
+    throw new E("foo");
+}
+catch (e) {
+    throw new MyE("bar");
+}
+```
 
 ## this._super
 
