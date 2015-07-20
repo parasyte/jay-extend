@@ -177,11 +177,12 @@ replacements with [`grunt-replace`](https://github.com/outaTiME/grunt-replace).
 Here's a sample `grunt-replace` configuration that takes care of this for you:
 
 ```javascript
-"options" : {
-  "patterns" : [
+options : {
+  usePrefix : false,
+  patterns : [
     {
-      "match" : /this\._super\(\s*([\w\.]+)\s*,\s*"(\w+)"\s*(,\s*)?/g,
-      "replacement" : "$1.prototype.$2.apply(this$3"
+      match : /this\._super\(\s*([\w\.]+)\s*,\s*["'](\w+)["']\s*(,\s*)?/g,
+      replacement : "$1.prototype.$2.apply(this$3"
     }
   ]
 }
