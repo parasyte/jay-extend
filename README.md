@@ -27,7 +27,7 @@ I wrote an in-depth article that is available on my
 
 ### Setup in nodeland
 
-Install: `$ npm install jay-extend`
+Install: `$ npm install -S jay-extend`
 
 ```javascript
 // Require Jay.extend() method
@@ -36,11 +36,11 @@ var Jay = require("jay-extend");
 
 ### Setup in browserland
 
-Install: `$ bower install jay-extend`
+Install: `$ bower install -S jay-extend`
 
 ```html
 <!-- Add Jay.extend() method -->
-<script src="jay-extend/lib/jay-extend.js"></script>
+<script src="bower_components/jay-extend/lib/jay-extend.js"></script>
 ```
 
 ### Example class definitions
