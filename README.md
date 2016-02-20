@@ -18,6 +18,8 @@ performance.
 *Caveat Emptor: Startup-time performance suffers, due to `Object.defineProperty`
 calls.*
 
+Performance is on par with ES6 class: http://jsperf.com/class-super-vs-jay-extend/6
+
 ### More information
 
 I wrote an in-depth article that is available on my
